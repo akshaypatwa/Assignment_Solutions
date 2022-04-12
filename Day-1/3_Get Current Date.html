@@ -1,0 +1,38 @@
+<!-- Write a JavaScript program to get the current date.
+Expected Output :
+mm-dd-yyyy, mm/dd/yyyy or dd-mm-yyyy, dd/mm/yyyy -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //initiliaze the object
+        var currdate = new Date();
+        //get the date month and year
+        var dd = currdate.getDate();
+        var mm = currdate.getMonth();
+        var yyyy = currdate.getFullYear();
+
+        //convert into 2 digits if single digit found
+        if(dd<10)
+        dd="0"+dd;
+        if(mm<10)
+        mm="0"+mm;
+
+        //Date Formats
+        date1 = mm + "-" + dd + "-" + yyyy;
+        document.write("mm-dd-yyyy - " +date1+ "<br>");
+        
+        date2 = mm + "/" + dd + "/" + yyyy;
+        document.write("mm/dd/yyyy - "+date2+ "<br>");
+
+        date3 = dd + "/" + mm + "/" + yyyy;
+        document.write("dd/mm/yyyy - " +date3);
+   
+    </script>
+</body>
+</html>

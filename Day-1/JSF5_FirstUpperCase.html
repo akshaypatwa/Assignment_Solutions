@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <title>First Upper Case</title>
+</head>
+<body>
+    <script>
+       function uppercase(newstring)
+       {
+           var strSplit = newstring.split(" ");
+           var strArray = [];
+
+           for (var i=0;i<strSplit.length; i++)
+           {
+               strArray.push(strSplit[i].charAt(0).toUpperCase()+strSplit[i].slice(1));
+           }
+
+           return strArray.join(' ');
+
+       }
+
+       newstring = prompt("enter string");
+       document.write(uppercase(newstring));
+
+    </script>
+    
+</body>
+</html>

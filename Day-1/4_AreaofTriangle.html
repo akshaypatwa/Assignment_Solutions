@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+<title>Area of Triangle</title>
+</head>
+<body>
+    <script>
+        function TArea (lenght1, length2, length3)
+        {
+            
+            document.write("Side One is " + length1 + "<br>");
+            document.write("Side Two is " + length2 + "<br>");
+            document.write("Side Three is " + length3 + "<br><br>");
+        
+            var semip = (length1 + length2 + length3)/2;
+            var area = Math.sqrt(semip*((semip-length1)*(semip-length2)*(semip-length3)));
+            answer = area.toFixed()
+            document.write("The Area is " + answer);
+        }
+
+       var length1 = prompt("Enter First side");
+       var length2 = prompt("Enter Second side");
+       var length3 = prompt("Enter Third side");
+
+       TArea(length1, length2, length3);       
+
+    </script>
+    
+</body>
+</html>

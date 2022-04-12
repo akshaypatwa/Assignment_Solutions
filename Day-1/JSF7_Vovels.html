@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Vovels</title>
+</head>
+<body>
+    <script>
+        function Vovelcheck (newstring)
+        {
+            newvovel = newstring.match(/[aeiou]/gi);
+            return newvovel.length;
+        }
+
+        var newstring = prompt("Enter your search word(s)");
+        vovelcount = Vovelcheck(newstring)
+        document.write("Count of vovels in the word : " + newstring + " is - " + vovelcount);
+    </script>
+</body>
+</html>

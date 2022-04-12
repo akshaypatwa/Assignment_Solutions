@@ -1,0 +1,37 @@
+<!-- Write a JavaScript function which returns the n rows by n columns identity
+matrix. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Matrix</title>
+</head>
+<body>
+    <script>
+        function newmatrix(Mnumber)
+        {
+            var i,j;
+
+            for(i=0;i<Mnumber;i++)
+            {
+                for(j=0;j<Mnumber;j++)
+                {
+                    if(i===j)
+                    {
+                        document.write('1');
+                    }
+                    else
+                    {
+                        document.write(0);
+                    }
+                   
+                }
+            }
+        }
+        
+        var matNumber = prompt("Enter number for Matrix");
+        newmatrix(matNumber);
+    </script>
+</body>
+</html>

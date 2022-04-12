@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Find Unique char</title>
+</head>
+<body>
+    <script>
+        function unique_char(NewStr)
+            {
+               
+                var uniql="";
+                    for (var x=0;x < NewStr.length;x++)
+                        {
+
+                        if(uniql.indexOf(NewStr.charAt(x))==-1)
+                            {
+                            uniql += NewStr[x];  
+                            
+                            }
+                        }
+                return uniql;  
+            }  
+document.write(unique_char("thequickbrownfoxjumpsoverthelazydog"));
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!-- Write a JavaScript function to compute the value of bn where n is the 
+exponent and b is the bases. Accept b and n from the user and display the
+result. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Calculate Exponential</title>
+
+</head>
+<body>
+    <script>
+        firstvar = prompt("Enter first number");
+        secondvar = prompt("Enter exponential value");
+
+        finalans = 1;
+
+        for (var i =1; i<= secondvar; i++)
+        {
+            finalans = secondvar*finalans;
+        }
+
+        document.write("The answer of " + firstvar + " to the power of " + secondvar + " is " + finalans)
+    </script>
+</body>
+</html>
