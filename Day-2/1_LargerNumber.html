@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Larger Number</title>
+</head>
+<body>
+    <script>
+        function lnumber(fnum, snum)
+        {
+           var firstnum = parseInt(fnum);
+           var secondnum = parseInt(snum);
+            // alert(firstnum);
+
+            if(firstnum > secondnum)
+            document.write("The number " + firstnum + " is greater and number " + secondnum + " is smaller");
+            else if(firstnum < secondnum)
+            document.write("The number " + secondnum + " is greater and number " + firstnum + " is smaller");
+            else
+            document.write("Both numbers: " + firstnum + " and " + secondnum + " are equal ");
+        }
+
+        fnum = prompt("Enter first number");
+        snum = prompt("Enter second number");
+
+        lnumber(fnum, snum);
+    </script>
+</body>
+</html>
