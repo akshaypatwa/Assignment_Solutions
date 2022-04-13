@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Nested Loop Pattern</title>
+</head>
+<body>
+    <script>
+        function nestedloop(number)
+        {
+            
+            var string = "";
+            for (var i = 1; i <= number; i++) 
+            {
+                for (var j = 0; j < i; j++)
+                {
+                    string += "*";
+                }
+                    string += "<br>";
+                        
+            }
+                    
+                    document.write(string);
+        }
+
+        nestedloop(5);
+    </script>
+</body>
+</html>
