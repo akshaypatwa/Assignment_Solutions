@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Multiples of 3 and 5 under 1000</title>
+</head>
+<body>
+    <script>
+        function findmultiples(n1)
+        {
+            var final = 0
+            for(var i =0; i<n1; i++)
+            {
+                if(i%3 === 0 || i%5 === 0)
+                final += i;
+            }
+            return final;
+        }
+
+        multiples = findmultiples(1000);
+        document.write("The sum of multiplese of 3 and 5 under 1000 is " + multiples);
+
+    </script>
+</body>
+</html>
