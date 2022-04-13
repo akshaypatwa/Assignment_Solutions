@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Average marks</title>
+</head>
+<body>
+    <script>
+        function avgmarksstud(m1,m2,m3,m4,m5)
+        {
+            var avgarray = [m1,m2,m3,m4,m5];
+            var avgmarks = 0;
+            var addmarks =0;
+
+            for(i=0; i<avgarray.length; i++)
+            addmarks += avgarray[i];
+
+            return avgmarks = addmarks/avgarray.length;
+
+        }
+
+        calcmarks = (avgmarksstud(80, 77, 88, 95, 68));
+      
+        
+        if (calcmarks < 60)
+            document.write("Grade : F");  
+
+            else if (calcmarks < 70) 
+            document.write("Grade : D"); 
+
+            else if (calcmarks < 80) 
+            document.write("Grade : C"); 
+
+            else if (calcmarks < 90) 
+            document.write("Grade : B"); 
+            
+            else if (calcmarks < 100) 
+            document.write("Grade : A"); 
+
+    </script>
+</body>
+</html>
