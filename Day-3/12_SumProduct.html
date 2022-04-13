@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Sum and Product of an Array</title>
+</head>
+<body>
+    <script>
+        function sumprod(newnum)
+        {
+            var sum=0;
+            var prod =1;
+
+            for(i=0;i<newnum.length;i++)
+            {
+                sum += newnum[i];
+                prod *= newnum[i];
+                
+            }
+
+            document.write("The Sum of " + newnum + " is " + sum + "<br><br>")
+            document.write("The Product of " + newnum + " is " + prod)
+        }
+
+        sumprod([1,2,3,4,5])
+    </script>
+</body>
+</html>

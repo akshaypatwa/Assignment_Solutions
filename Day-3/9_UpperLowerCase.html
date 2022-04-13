@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Upper and Lower Case Swap</title>
+</head>
+<body>
+    <script>
+        function swapcase(newstring)
+        {
+            var scase = ''; // If this variable is not defined to '' quotes, it will give an undefined string at the begining
+            for(var i=0; i<newstring.length; i++)
+            {
+                if (newstring[i] == newstring[i].toUpperCase())
+                {
+                    scase += newstring[i].toLowerCase();
+                }else{
+                    scase += newstring[i].toUpperCase();
+                }
+            } 
+            document.write(scase);
+        }
+        name = "My NEw NaMe"
+        swapcase(name);
+    </script>
+</body>
+</html>

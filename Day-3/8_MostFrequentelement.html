@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Most Frequent Element in Array</title>
+</head>
+<body>
+    <script>
+        function frequentEle(newarr)
+        {
+            var freq = 0;
+            var mostfreq = 1;
+            var element
+
+
+            for(var i =0; i<newarr.length; i++)
+            {
+                for(var j=i; j<newarr.length; j++)
+                {
+                    if(newarr[i] == newarr[j])
+                    freq++;
+
+                    if(mostfreq<freq)
+                    {
+                        mostfreq=freq;
+                        element = newarr[i];
+                    }
+                }
+                freq=0;
+            }
+
+            document.write(" element " + element + " is repeated " + mostfreq + " times ")
+        }
+
+        frequentEle([3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3]);
+        
+    </script>
+</body>
+</html>

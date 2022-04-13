@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Remove Duplicates from Array</title>
+</head>
+<body>
+    <script>
+       
+        function remDuplicates(newarr)
+        {
+            var uniqueArr = [];
+            for(var i of newarr) 
+            {
+                if(uniqueArr.indexOf(i) === -1) 
+                {
+                    uniqueArr.push(i);
+                }
+            }
+            document.write(uniqueArr)
+        }
+
+        remDuplicates([1,2,2,2,3,4,4,5]);
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Get First Array Element</title>
+</head>
+<body>
+    <script>
+        function getelement(newarr,n)
+        {
+            if(newarr == null)
+            return void 0;
+
+            if (n == null)
+            return newarr[0];
+
+            if(n<0)
+            return [];
+            var firstele = newarr.slice(0, n);
+            return firstele;
+
+        }
+
+        document.write(getelement([7, 9, 0, -2])+ "<br>");
+        document.write(getelement([],3) + "<br>");
+        document.write(getelement([7, 9, 0, -2],3) + "<br>");
+        document.write(getelement([7, 9, 0, -2],6) + "<br>");
+        document.write(getelement([7, 9, 0, -2],-3) + "<br>");
+
+    </script>
+
+</body>
+</html>

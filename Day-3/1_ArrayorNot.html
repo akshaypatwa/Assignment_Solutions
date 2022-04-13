@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Array or Not</title>
+</head>
+<body>
+    <script>
+        function chkArray(newarr)
+        {
+            if(Array.isArray(newarr))
+            return true;
+            else return false;
+        }
+
+        document.write(chkArray('w3resource'));
+        document.write("<br>")
+        document.write(chkArray([1, 2, 4, 0]));
+    </script>
+</body>
+</html>

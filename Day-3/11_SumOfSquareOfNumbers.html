@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sumsq(newnum)
+        {
+            var answer =0;
+
+            for(i=0;i<newnum.length;i++)
+            answer += Math.pow(newnum[i],2);
+            return answer
+        }
+
+        document.write(sumsq([1,2,3,4,5]));
+    </script>
+</body>
+</html>

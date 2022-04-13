@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Clone Array</title>
+</head>
+<body>
+    <script>
+        function cloneArr(newarr)
+        {
+            var clonearr = [];
+            return clonearr = newarr.slice(); // Slice method is used to create a copy of an array
+            
+        }
+
+        var arr1 = cloneArr([1, 2, 4, 0]);
+        var arr2 = cloneArr([1, 2, [4, 0]]);
+
+        document.write("New Array : " + arr1 + "<br>")
+        document.write("Cloned array : " + cloneArr(arr1));
+
+        document.write("<br><br>")
+
+        document.write("New Array : " + arr2 + "<br>")
+        document.write("Cloned array : " +  cloneArr(arr2));
+    </script>
+</body>
+</html>

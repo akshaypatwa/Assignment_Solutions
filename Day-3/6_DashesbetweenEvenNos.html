@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Dashes between two Even Numbers</title>
+</head>
+<body>
+    <script>
+        function evendashes(newnum)
+        {
+            var newarr = newnum.toString();
+            var result = [newarr[0]];
+
+            for(i=1; i<newarr.length; i++)
+            {
+                if (newarr[i-1] % 2 === 0 && newarr[i]%2 === 0)
+                result.push('-', newarr[i]);
+                else
+                result.push(newarr[i]);
+
+            }
+            document.write(result.join(''));
+        }
+        newnum = prompt("Enter number")
+        evendashes(newnum);
+    </script>
+</body>
+</html>
