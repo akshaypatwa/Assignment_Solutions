@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Binary Search</title>
+</head>
+<body>
+    <script>
+        function bSearch(elements, num)
+        {
+            var startindex =0;
+            var lastindex = elements.length-1;
+            var midindex = Math.floor((lastindex+startindex)/2);
+
+            while(elements[midindex] != num && startindex < lastindex)
+                {
+                    if (num < elements[midindex])
+                    {
+                         lastindex = midindex - 1;
+                    } 
+                    else if (num > elements[midindex])
+                    {
+                         startindex = midindex + 1;
+                    }
+                        midindex = Math.floor((lastindex + startindex)/2);
+                }
+
+            return (elements[midindex] != num) ? -1 : midindex;
+        }
+
+        var elements = [1,2,3,4,5,6,7] 
+        document.write(bSearch(elements, 4))
+    </script>
+</body>
+</html>
