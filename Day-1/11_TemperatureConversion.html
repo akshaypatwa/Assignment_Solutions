@@ -13,17 +13,17 @@ Expected Output :
 </head>
 <body>
     <script>
-        var celsius = 60;
-        var fahrh = 45;
+        function celFahr(celsius, fahrh)
+        {
+            CtoF = (9*celsius + 160)/5;
+            FtoC = (5*(fahrh-32))/9;
 
-        CtoF = (9*celsius + 160)/5;
-        FtoC = (5*(fahrh-32))/9;
+            document.write(60 + " C is " + CtoF + "F <br><br>");
+            document.write(45 + " F is " + FtoC + "C" + "<br><br>");
+        }
 
-        document.write(60 + " C is " + CtoF + "F <br><br>");
-        document.write(45 + " F is " + FtoC + "C");
-        
-
-
+        celFahr(60, 45);
+        celFahr(30, 25);
     </script>
     
 </body>
