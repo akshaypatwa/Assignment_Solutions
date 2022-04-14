@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Capitalize Fist letter Each Word</title>
+</head>
+<body>
+    <script>
+        function stringparam(newstring)
+        {
+            calcstring = newstring.split(" ");
+            strlength = newstring.length
+
+            for(var i=0; i<strlength; i++)
+            newstring[i] = newstring[i][0].toUpperCase() + newstring[i].substr(1);
+            return newstring.join(" ");
+                   
+        }
+        
+
+        document.write(("this is Akshay Patwa"));
+    </script>
+</body>
+</html>

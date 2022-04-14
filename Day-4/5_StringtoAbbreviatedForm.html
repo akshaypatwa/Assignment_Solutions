@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Convert string to Abbrevated form</title>
+</head>
+<body>
+    <script>
+        function abbr(string1)
+        {
+            var splitres = string1.split(" ");
+            if(splitres.length >1)
+            return (splitres[0] + " " + splitres[1].charAt(0) + ".")
+            
+        }
+
+        document.write(abbr("Akshay Patwa"));
+    </script>
+</body>
+</html>

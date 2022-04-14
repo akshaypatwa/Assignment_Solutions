@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Hide email addresses to protect from unauthorized user</title>
+</head>
+<body>
+    <script>
+        function emailaddr(email)
+        {
+            var newsplit, half, part1, part2;
+            newsplit = email.split("@");
+            part1 = newsplit[0];
+            
+            half = part1.length/2;
+            part1 = part1.substring(0, (part1.length - half));
+            part2 = newsplit[1];
+
+            return part1 + "...@" + part2;
+        }
+
+        document.write(emailaddr("akshay.patwa@inmorphis.com"));
+    </script>
+</body>
+</html>
