@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>List the properties of a JavaScript objec</title>
+</head>
+<body>
+    <script>
+        let getKeys = function (student) 
+        {
+            var keysArr = [];
+
+            for (var key in student) // need more understanding
+            keysArr.push(key);
+            
+            document.write(keysArr);
+        }
+
+        var student = {
+            name : "David Rayy",
+            sclass : "VI",
+            rollno : 12 
+        };
+        getKeys(student);
+    </script>
+    
+</body>
+</html>

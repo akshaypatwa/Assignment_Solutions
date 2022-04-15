@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Subset of String</title>
+</head>
+<body>
+    <script>
+            function sub_String(str) 
+            {
+                var subset = [];
+                for (var i = 0; i < str.length; i++) 
+                {
+                    for (var j = i+1; j<str.length+1; j++) 
+                    {
+                    subset.push(str.slice(i,j));
+                    }
+                }
+                return subset;
+            }
+
+            document.write(sub_String("dog"));
+    </script>
+    
+</body>
+</html>
