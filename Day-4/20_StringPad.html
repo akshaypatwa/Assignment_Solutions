@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Pad (left, right) a string to get to a determined length</title>
+</head>
+<body>
+    <script>
+function formatted_string(pad, user_str, pad_pos)
+        {
+            if (typeof user_str === 'undefined') 
+                return pad;
+
+            if (pad_pos == 'l')
+                return (pad + user_str).slice(pad.length -1);
+                
+            else 
+                return (user_str + pad).substring(0, pad.length);
+        }
+
+document.write(formatted_string('0000',123,'l'));
+    </script>
+</body>
+</html>

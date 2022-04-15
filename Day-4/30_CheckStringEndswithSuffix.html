@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title> Write a JavaScript function to find a word within a string</title>
+</head>
+<body>
+    <script>
+        function string_endsWith(str, suffix) 
+        {
+        
+            if (((str===null) || (str==='')) || ((suffix===null) || (suffix==='')))
+                return false;
+            else
+            {     
+            str = str.toString();
+            suffix = suffix.toString();
+            }
+            return str.indexOf(suffix, str.length - suffix.length) !== -1;
+        }
+
+        document.write(string_endsWith('JS PHP PYTHON','PYTHON'));
+        document.write(string_endsWith('JS PHP PYTHON',''));
+    </script>
+    
+</body>
+</html>

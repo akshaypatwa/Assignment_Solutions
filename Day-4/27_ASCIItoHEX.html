@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Alphabetize a given string</title>
+</head>
+<body>
+    <script>
+        function ascii_to_hexa(str)
+        {
+            var arr1 = [];
+            var l = str.length
+            for (var n = 0; n < l; n ++) 
+            {
+                var hex = Number(str.charCodeAt(n)).toString(16);
+                arr1.push(hex);
+            }
+            return arr1.join('');
+        }
+        document.write(ascii_to_hexa('12'));
+    </script>
+    
+</body>
+</html>

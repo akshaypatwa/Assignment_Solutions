@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title> Write a JavaScript function to find a word within a string</title>
+</head>
+<body>
+    <script>
+        function searchword(str, Sword)
+        {
+            strsplit = str.split(" ");
+            var Scount = 0;
+            for(i=0;i<strsplit.length;i++)
+            {
+            if(strsplit[i]==Sword)
+            Scount++
+            }
+            return Scount;
+        }
+        document.write(searchword("The The new The word" , "The"));
+    </script>
+    
+</body>
+</html>

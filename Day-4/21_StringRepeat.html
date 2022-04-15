@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Pad (left, right) a string to get to a determined length</title>
+</head>
+<body>
+
+    <p id="demo">"</p>
+
+    <script>
+
+        function repeatstr(newstr, repeat)
+        {
+            var result = newstr.repeat(repeat);
+            document.getElementById("demo").innerHTML = result;
+        }
+        newstr = prompt("Enter the string to repeat");
+        repeat = prompt("Enter the number of times to repeat");
+
+        repeatstr(newstr, repeat);
+    </script>
+
+    
+</body>
+</html>
