@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Convert sring to title Case</title>
+</head>
+<body>
+    <script>
+            function strip_html_tags(str)
+            {
+                if ((str===null) || (str===''))
+                    return false;
+
+                else
+                str = str.toString();
+                return str.replace(/<[^>]*>/g, '');
+            }
+
+           document.write(strip_html_tags('<p><strong><em>PHPExercises</em></strong></p>'));
+    </script>
+    
+</body>
+</html>

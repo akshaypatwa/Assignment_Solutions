@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title> Write a JavaScript function to find a word within a string</title>
+</head>
+<body>
+    <script>
+        function remove_non_ascii(str) 
+        {      
+            if ((str===null) || (str===''))
+                return false;
+
+            else
+            str = str.toString();
+            
+            return str.replace(/[^\x20-\x7E]/g, '');
+        }
+        document.write((remove_non_ascii('äÄçÇéÉêPHP-MySQLöÖÐþúÚ')));    
+    </script>
+    
+</body>
+</html>

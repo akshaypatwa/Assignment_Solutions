@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Test case insensitive (except special Unicode characters) string comparison</title>
+</head>
+<body>
+    <script>
+        function case_insensitive_search(str, search_str)
+        {
+            var result= str.search(new RegExp(search_str, "i"));
+        
+            if (result>0)
+            return 'Matched';
+
+            else
+            return 'Not Matched';  
+        }
+
+        document.write(case_insensitive_search('JavaScript Exercises', 'exercises'));
+        document.write("<br>")
+        document.write(case_insensitive_search('JavaScript Exercises', 'Exercisess'));
+    </script>
+    
+</body>
+</html>

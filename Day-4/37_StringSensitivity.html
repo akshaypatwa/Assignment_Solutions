@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Test case insensitive (except special Unicode characters) string comparison</title>
+</head>
+<body>
+    <script>
+        function compare_strings(str1, str2)
+        {
+            var areEqual = str1.toUpperCase() === str2.toUpperCase();
+            return areEqual;
+        }
+
+        document.write(compare_strings('abcd', 'AbcD'));
+        document.write("<br>")
+        document.write(compare_strings('ABCD', 'Abce'));
+    </script>
+    
+</body>
+</html>

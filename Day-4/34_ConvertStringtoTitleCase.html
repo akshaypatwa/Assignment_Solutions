@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Convert sring to title Case</title>
+</head>
+<body>
+    <script>
+
+    function titleCase(str) 
+    {
+        str = str.toLowerCase().split(' ');
+        for (var i = 0; i < str.length; i++) {
+            str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);
+        }
+        return str.join(' ');
+    }
+    document.write(titleCase("This is new String"));
+    </script>
+    
+</body>
+</html>
