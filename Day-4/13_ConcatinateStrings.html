@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Write a JavaScript function to concatenates a given string n times </title>
+</head>
+<body>
+    <script>
+        function concat(newstr, count)
+        {
+            if (count == 1)
+            return newstr;
+
+            return count <1 ? 'not valid' : new Array(count +1).join(newstr) //Array() is a constructor used to create Array Object.
+        }
+
+        document.write(concat("Ha!",1));
+    </script>
+</body>
+</html>

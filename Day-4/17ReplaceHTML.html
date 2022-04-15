@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Truncate a string if it is longer than the specified number of characters</title>
+</head>
+<body>
+    <script>
+        function ReplaceHTML(inputstr) {
+    'use strict';
+
+    return inputstr.replace(/[&<>"]/g, function (rep) {
+		var replacementchars = {
+        };
+
+		return replacementchars[rep] || rep;
+	});
+}
+
+document.write(ReplaceHTML('&lt;a href=&quot;javascript-string-exercise-17.php&quot; target=&quot;_blank&quot;&gt;'));
+    </script>
+</body>
+</html>

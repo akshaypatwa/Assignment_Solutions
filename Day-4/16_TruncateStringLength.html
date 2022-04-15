@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Truncate a string if it is longer than the specified number of characters</title>
+</head>
+<body>
+    <script>
+        function truncatestr(newstr, len, end)
+        {
+            if (len == null) 
+            len = 100;
+        
+            if (end == null) 
+            end = '...';
+            
+            if (newstr.len > len) 
+            return newstr.substring(0, len - end.len) + end;
+            
+            else 
+            return newstr;
+    
+        }      
+        document.write(truncatestr("WE are doing JS string exercises" , 15, "!!"));
+    </script>
+</body>
+</html>

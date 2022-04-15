@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Humanize numbers</title>
+</head>
+<body>
+    <script>
+        function humanize(newnum)
+        {
+            if(newnum % 100 >= 11 && newnum % 100 <= 13)
+            return newnum + "th";
+        
+            switch(newnum % 10) {
+            case 1: return newnum + "st";
+            case 2: return newnum + "nd";
+            case 3: return newnum + "rd";
+        }
+        
+        return newnum + "th";
+        }
+
+        var newnum = prompt("Enter any number");
+        document.write(humanize(newnum));
+    </script>
+</body>
+</html>

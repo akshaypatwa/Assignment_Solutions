@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Insert a string within a specific position in another string</title>
+</head>
+<body>
+    <script>
+        function strinsert(ogstr, newstr, pos)
+        {
+            if(typeof(pos) == "undefined")
+            pos =0;
+
+            if(typeof(newstr) == "undefined")
+            newstr = "";
+            // alert(ogstr.slice(0,pos));
+            // alert(ogstr.slice(pos));
+            return ogstr.slice(0,pos) + newstr + ogstr.slice(pos);
+        }
+
+        document.write(strinsert('We are doing some exercises.','JavaScript ',18));
+    </script>
+</body>
+</html>
