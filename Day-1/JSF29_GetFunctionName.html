@@ -1,0 +1,18 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <title> 
+           Get Function Name
+        </title> 
+    </head> 
+<body>
+        <script type = "text/javascript"> 
+            function getname() 
+            {
+                document.write( arguments.callee.name );
+            }
+
+            getname();
+        </script> 
+    </body> 
+</html> 

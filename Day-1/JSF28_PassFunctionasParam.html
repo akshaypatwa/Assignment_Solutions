@@ -1,0 +1,25 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <title> 
+            JavaScript | Pass a function as parameter 
+        </title> 
+    </head> 
+<body>
+        <p> 
+            Passing function as arguments. 
+        </p> 
+          
+        <!-- Function call after clicking the button -->
+        <button onclick = "func_outer(func_inner)"> Click Here</button>     
+          
+        <script type = "text/javascript"> 
+            function func_inner(value){
+                return 'hello User!';
+            }
+            function func_outer(func){
+                alert(func());
+            }
+        </script> 
+    </body> 
+</html> 
