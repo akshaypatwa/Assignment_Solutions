@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Count the number of occurrences of the specified letter within the string</title>
+</head>
+<body>
+  <script>    
+          function charCount(newstr, element) 
+          {
+            var countele = 0;
+            for (var i = 0; i < newstr.length; i++) 
+            {
+                if (newstr.charAt(i) == element) 
+                  {
+                  countele += 1;
+                  }
+              }
+              return document.write(element + " is repeated " + countele + " times")
+          }
+
+        (charCount('akshay', 'a'));
+    </script>
+</body>
+</html>

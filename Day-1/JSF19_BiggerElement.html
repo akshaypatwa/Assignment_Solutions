@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title> Get the number of occurrences of each letter in specified string.</title>
+</head>
+<body>
+  <script>    
+      var returnLarger = (newarr, element) => {
+        var resultArr = []
+          
+        for(var i = 0; i < newarr.length; i++)
+        {
+          if(newarr[i] > element)
+            resultArr.push(newarr[i])
+        }
+          
+        return resultArr;
+      }
+        
+      document.write(returnLarger( [65, 16, 0, 6, 64, 1, 68], 16) + "<br>")
+      document.write(returnLarger([6, 46, 54, 6, 56, 54, 65, 4, 65], 50))
+    </script>
+</body>
+</html>

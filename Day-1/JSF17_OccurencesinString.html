@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title> Get the number of occurrences of each letter in specified string.</title>
+</head>
+<body>
+    <script>
+        function count_occur( str )
+        {
+          if( str.length == 0 )
+          {
+            document.write("Invalid string")
+            return;
+          }
+          for( var i = 0 ;i < str.length ;i++)
+          {
+            var count = 0;
+            for( var j = 0 ;j < str.length ;j++)
+            {
+              if( str[i] == str[j] && i > j  )
+               break;
+
+              if( str[i] == str[j])
+                count++;
+            }
+            if( count > 0)
+            document.write(`${str[i]} occurs ${count} times` + "<br>"); //new way of printing values using back ticks ``
+          }
+        }
+         
+        // test string
+        let test_str = "gfghello";
+        count_occur( test_str);
+        </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Randomize string</title>
+</head>
+<body>
+  <script>    
+      function makeid(len)
+          {
+            var newtext = "";
+            var chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+            for(var i=0; i < len; i++ )
+            {  
+              newtext += chars.charAt(Math.random() * chars.length);
+            }
+            return newtext;
+          }
+      document.write(makeid(9));
+    </script>
+</body>
+</html>
